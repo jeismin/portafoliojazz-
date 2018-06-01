@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #2459C7; 
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex; 
+}
+
+.menu li {
+   border-right: 1px solid #fff;
+}
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width:760px) {
+    header label{display: block;    
+    }
+    
+    .menu {
+        position: absolute;
+        background: #2459C7;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    
+main {
+    padding: 20px;
+    }
+
+form {
+    width: 200px;
+    margin: auto;
+    
+    box-sizing: border-box;
+    margin-top: 100px;
+    border-radius: 20px; 
+    
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+input, textarea {
+    width: 250%;
+    margin-bottom: 8%;
+    padding: 7%;
+    box-sizing: border-box;
+    font-size: 17px;
+   
+}
+#boton:hover {
+    cursor: pointer;
+}
